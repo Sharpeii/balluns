@@ -1,5 +1,6 @@
 @import /src/css/normalize.css
 @import /src/css/reset.css
+$color-black: rgba(0, 0, 0, 1)
 $color-white: #FAFAFA
 $color-gray-light: #F7F7F7
 $color-gray: #777
@@ -8,6 +9,7 @@ $Brown-color-light: #BA8554
 $Brown-color-darck: #A14F03
 $gradient-brown-black: linear-gradient(90deg, #BA8554 0%, #000 100%)
 $gradien-brown_light-brown_darck: linear-gradient(90deg, #C3956A 3.65%, #A14F03 100%)
+$gradient-broun-black-light: linear-gradient(90deg, rgba(186, 133, 84, 0.70) 0.03%, rgba(1, 1, 1, 0.70) 99.94%)
     
 *
     margin: 0
@@ -56,7 +58,7 @@ h4
     
 .header
     &__background
-        background: linear-gradient(90deg, rgba(186, 133, 84, 0.70) 0.03%, rgba(1, 1, 1, 0.70) 99.94%), url(../img/header_pic.jpeg) no-repeat center/cover
+        background: $gradient-broun-black-light, url(../img/header_pic.jpeg) no-repeat center/cover
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%)
     &__nav
         padding: 50px
